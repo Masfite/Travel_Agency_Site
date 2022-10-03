@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/header.css')}}"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+    <div class="header">
+      <div class="TopPicture">
+        <img id="Picture" src="/static/img/TopPicture.jpg" />
+      </div>
+
+      <div class="Buttons">
+        <div id="Main"><a href="index">Главная</a></div>
+        <div id="Where_are_found_us">
+          <a href="where">Где нас <br />найти?</a>
+        </div>
+        <div id="Turs_catalog">
+          <a href="cataloge">Каталог <br />туров</a>
+        </div>
+        <div id="About_us"><a href="about_us">О нас</a></div>
+      </div>
+    </div>
+  </body>
+</html>

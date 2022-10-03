@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="/static/css/more.css" />
+    <meta charset="UTF-8" />
+    <title>Bjeget</title>
+  </head>
+  <body>
+    {% extends 'header.html' %} {% block title %} {% endblock %} {% block body%}
+    <div class="more">
+      <div class="info">
+        <img src="/static/img/Ekaterinburg.jpg" />
+        <div id="text1">
+          Первое, с чем ассоциируется Екатеринбург — сказы Бажова. Второе —
+          знаменитый уральский рок. Кроме историй о Хозяйке медной горы и песен
+          «Чайфа», «Наутилуса», «Агаты Кристи» и других рок-групп, главный город
+          Урала знаменит своими театрами. Екатеринбург — столица «новой драмы» и
+          родина выдающихся современных драматургов.
+        </div>
+
+        <div id="button"><a href="buy">Оформить</a></div>
+      </div>
+
+      <div class="futer">
+        <div class="textf">
+          <div class="contacts">
+            <div id="contats1">
+              Контакты:<br />Телефоны: +7 (961) 086 60-28; +8 (844) 258 70-35<br />Mail:
+              abramov1kirill@yandex.ru
+            </div>
+            <div id="about_company">
+              О компании:<br /><a href="https://vspc34.ru/">Наш партнер</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>

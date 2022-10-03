@@ -1,0 +1,162 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #0f0f0f;
+	font-family: Bahnschrift;
+}
+.TopPicture{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 6vw;
+	margin-bottom: 1vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#Picture{
+	width: 100%;
+	height: auto;
+	filter: blur(6px);
+}
+#hello{
+	position: absolute;
+	font-size: 3vw;
+	color: white;
+	text-align: center;
+}
+#we{
+	font-size: 2vw;
+}
+.Buttons{
+	display: flex;
+	justify-content: space-between;
+	width: 55%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	align-items: center;
+	font-size: 1vw;
+	text-align: center;
+	margin-bottom: 9vw;
+	color: #cbc8f3;
+	font-weight: bold;
+}
+a{
+	text-decoration: none;
+	color: #cbc8f3;
+	transition: 0.3s;
+}
+a:hover{
+	color: #FFF3CB;   
+}
+.text{
+	color: #cbc8f3;
+	text-align: center;
+	font-size: 1.1vw;
+	margin-bottom: 2vw;
+}
+.map{
+	width: 80%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-bottom: 15vw;
+	filter: blur(0px);
+	position: relative;
+}
+#way{
+	width: 100%;
+}
+#piter{
+	width: 9%;
+	height: 3.5vw;
+	position: absolute;
+	top: 15%;
+	left: 3%;
+}
+#moscow{
+	position: absolute;
+	width: 4%;
+	height: 2vw;
+	top: 36%;
+	left: 11%;
+}
+#volgograd{
+	position: absolute;
+	top: 59%;
+	left: 15.8%;
+	width: 5%;
+	height: 2vw;
+}
+#ufa{
+	position: absolute;
+	top: 40%;
+	left: 25.55%;
+	width: 3%;
+	height: 2vw;
+}
+#ekaterinburg{
+	position: absolute;
+	top: 32.1%;
+	left: 27.2%;
+	width: 7%;
+	height: 2vw;
+}
+#novosibirsk{
+	position: absolute;
+	top: 38%;
+	left: 44.2%;
+	width: 7%;
+	height: 2vw;
+}
+#irkutsk{
+	position: absolute;
+	top: 47%;
+	left: 62%;
+	width: 4%;
+	height: 2.2vw;
+}
+#habarovsk{
+	position: absolute;
+	top: 59%;
+	left: 85%;
+	width: 5.2%;
+	height: 2.2vw;
+}
+#vladivostok{
+	position: absolute;
+	top: 70%;
+	left: 82%;
+	width: 6.5%;
+	height: 3.2vw;
+}
+.futer{
+	width: 100%;
+	height: 10vw;
+	background-color: #cbc8f3;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1vw;
+}
+.textf{
+	width: 30%;
+	height: auto;
+}
+.contacts{
+	display: flex;
+	align-content: space-between;
+	line-height: 2vw;
+	display: flex;
+	justify-content: space-between;
+}
+#about_company a{
+	text-decoration: none;
+	color: #000;
+	transition: 0.3s;
+}
+#about_company a:hover{
+	color: #FFF3CB;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="/static/css/buy.css" />
+    <meta charset="UTF-8" />
+    <title>Bjeget</title>
+  </head>
+  <body>
+    {% extends 'header.html' %} {% block title %} {% endblock %} {% block body
+    %}
+    <div class="buy">
+      <div class="here">Здесь вы можете оформить тур.</div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.5889517127853!2d44.48971731586694!3d48.770645514834634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x411aca146938a5c9%3A0x27be1ad70aa435aa!2z0JLQvtC70LPQvtCz0YDQsNC00YHQutC40Lkg0YHQvtGG0LjQsNC70YzQvdC-LdC_0LXQtNCw0LPQvtCz0LjRh9C10YHQutC40Lkg0LrQvtC70LvQtdC00LY!5e0!3m2!1sru!2sru!4v1654007919458!5m2!1sru!2sru"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div id="texts">
+          Наш адрес:<br />Кутузовская ул., 5, Волгоград, Волгоградская обл.,
+          400094<br /><br />Телефоны: <br />+8 (844) 258 70-35<br />+7 (961) 086
+          60-28<br /><br />Почта: <br />abramov1kirill@yandex.ru
+        </div>
+      </div>
+
+      <div class="futer">
+        <div class="textf">
+          <div class="contacts">
+            <div id="contats1">
+              Контакты:<br />Телефоны: +7 (961) 086 60-28; +8 (844) 258 70-35<br />Mail:
+              abramov1kirill@yandex.ru
+            </div>
+            <div id="about_company">
+              О компании:<br /><a href="https://vspc34.ru/">Наш партнер</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>

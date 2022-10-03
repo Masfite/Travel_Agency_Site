@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <meta charset="UTF-8" />
+    <title>Bjeget</title>
+  </head>
+  <body>
+    {% extends 'header.html' %} {% block title %} {% endblock %} {% block body
+    %}
+    <div class="content">
+      <div class="Feeling">
+        Испытайте незабываемые эмоции,<br />вместе с Bjerget.
+      </div>
+
+      <div class="slider">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="/static/img/MamaevVolgograd.jpg" style="width: 100%" />
+            <div class="text">#</div>
+          </div>
+          <div class="mySlides fade">
+            <img src="/static/img/Ufa.jpg" style="width: 100%" />
+            <div class="text">#</div>
+          </div>
+          <div class="mySlides fade">
+            <img src="/static/img/Irkutsk.jpg" style="width: 100%" />
+            <div class="text">#</div>
+          </div>
+        </div>
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+
+      <div class="News">Наши новинки.</div>
+
+      <div class="futer">
+        <div class="textf">
+          <div class="contacts">
+            <div id="contats1">
+              Контакты:<br />Телефоны: +7 (961) 086 60-28; +8 (844) 258 70-35<br />Mail:
+              abramov1kirill@yandex.ru
+            </div>
+            <div id="about_company">
+              О компании:<br /><a href="https://vspc34.ru/">Наш партнер</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+    </div>
+    {% endblock %}
+  </body>
+</html>
